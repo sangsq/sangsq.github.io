@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sangsq</title>
+<style>
+  :root { --bg: #fdfdfb; --fg: #1d1d1f; --muted: #5d6470; --rule: #e1e5ea; --accent: #2c5f9e; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #16181c; --fg: #e6e8eb; --muted: #9aa3ae; --rule: #2f343b; --accent: #8db8ee; }
+  }
+  :root[data-theme="dark"] { --bg: #16181c; --fg: #e6e8eb; --muted: #9aa3ae; --rule: #2f343b; --accent: #8db8ee; }
+  html { background: var(--bg); }
+  body {
+    background: var(--bg); color: var(--fg); margin: 0 auto; max-width: 40rem;
+    padding: 4rem 16px 5rem; font: 17px/1.6 "Charter", "Georgia", "Source Serif Pro", serif;
+  }
+  h1 { font-size: 1.6rem; font-weight: 600; margin: 0 0 2.5rem; }
+  h2 {
+    font: 650 1.05rem system-ui, -apple-system, "Segoe UI", sans-serif;
+    margin: 0 0 .8rem; padding-top: .6rem; border-top: 1px solid var(--rule);
+  }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { display: flex; gap: 1.2rem; margin: .45rem 0; }
+  time { color: var(--muted); font: .9rem/1.9 system-ui, sans-serif; white-space: nowrap; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<h1>Welcome! This is sangsq's personal page.</h1>
+
+<h2>Blog</h2>
+<ul>
+  <li><time datetime="2026-11-20">2026-11-20</time>
+    <a href="blog/invisible-phase-transitions/">Probing invisible phase transitions via denoising score matching</a></li>
+</ul>
+</body>
+</html>
